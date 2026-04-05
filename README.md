@@ -124,7 +124,7 @@ Full voice pipeline: capture audio, transcribe with whisper.cpp, send to Ollama,
 
 mcp-listen uses [decibri](https://decibri.dev) for cross-platform microphone capture. No ffmpeg, no SoX, no system audio tools required. Pre-built native binaries with zero setup.
 
-Audio is captured as 16-bit PCM at 16kHz mono -- the standard format for speech-to-text engines.
+Audio is captured as 16-bit PCM at 16kHz mono, the standard format for speech-to-text engines.
 
 The `voice_query` tool replicates the pipeline from [voxagent](https://voxagent.run): capture audio, transcribe locally with whisper.cpp, and send to a local Ollama LLM. Fully offline, nothing leaves your machine.
 
@@ -155,11 +155,11 @@ The model is ~150MB and downloads once. You can also set the `WHISPER_MODEL_PATH
 
 ## Powered By
 
-- [decibri](https://decibri.dev) -- Cross-platform microphone capture for Node.js
-- [voxagent](https://voxagent.run) -- Voice-powered terminal agent (inspiration for the voice_query pipeline)
+- [decibri](https://decibri.dev): Cross-platform microphone capture for Node.js
+- [voxagent](https://voxagent.run): Voice-powered terminal agent (inspiration for the voice_query pipeline)
 
 ## License
 
-Apache-2.0 -- see [LICENSE](LICENSE)
+Apache-2.0. See [LICENSE](LICENSE) for details.
 
 Copyright 2026 [Analytics in Motion](https://www.analyticsinmotion.com)
