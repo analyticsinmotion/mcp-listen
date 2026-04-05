@@ -27,6 +27,9 @@
     "stt",
     "transcription"
   ],
+  "scripts": {
+    "test": "node test/smoke.js"
+  },
   "author": "Analytics in Motion",
   "license": "Apache-2.0",
   "repository": {

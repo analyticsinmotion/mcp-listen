@@ -114,7 +114,15 @@ async function voiceQuery(args) {
 
   if (captureResult.isError) return captureResult;
 
-  const captureData = JSON.parse(captureResult.content[0].text);
+  let captureData;
+  try {
+    captureData = JSON.parse(captureResult.content[0].text);
+  } catch {
+    return {
+      content: [{ type: 'text', text: 'Error: Failed to parse capture result.' }],
+      isError: true
+    };
+  }
   const wavPath = captureData.path;
 
   try {

@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD033 MD041 -->
+
 # mcp-listen
 
 **The first MCP server that can hear.**
@@ -25,7 +27,6 @@ Give your AI agents the ability to listen. Microphone capture and speech-to-text
   </table>
   <!-- badges: end -->
 </div>
-
 
 ## Tools
 
@@ -184,6 +185,17 @@ The model is ~150MB and downloads once. You can also set the `WHISPER_MODEL_PATH
 3. **Whisper model downloads on first use.** The first `voice_query` call requires a pre-downloaded model (~150MB).
 4. **No streaming.** MCP's request/response pattern means the entire recording is captured, then transcribed, then sent to the LLM. No real-time partial results.
 5. **Temp files.** `capture_audio` writes WAV files to the system temp directory. They are not automatically cleaned up. `voice_query` cleans up after itself.
+
+## Troubleshooting
+
+**Windows: "Error opening microphone"**
+Windows may block microphone access by default. Go to **Settings > Privacy & security > Microphone** and ensure microphone access is enabled for desktop apps.
+
+**Ollama: "Ollama is not running"**
+Some Ollama installations start as a background service automatically. If you see this error, run `ollama serve` manually or check that the Ollama service is running.
+
+**Whisper: "model not found"**
+The whisper model file must be downloaded before first use. See [Whisper Model Setup](#whisper-model-setup) for instructions.
 
 ## Powered By
 
