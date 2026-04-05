@@ -1,11 +1,31 @@
 # mcp-listen
 
-## The first MCP server that can hear
+**The first MCP server that can hear.**
 
-[![npm version](https://img.shields.io/npm/v/mcp-listen)](https://www.npmjs.com/package/mcp-listen)
-[![license](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
+Give your AI agents the ability to listen. Microphone capture and speech-to-text tools for MCP-compatible agents.
 
-Give your AI agents the ability to listen. Microphone capture and speech-to-text tools for MCP-compatible agents. Powered by [decibri](https://decibri.dev).
+<div>
+  <!-- badges: start -->
+  <table>
+    <tr>
+      <td><strong>Meta</strong></td>
+      <td>
+        <a href="https://www.npmjs.com/package/mcp-listen"><img src="https://img.shields.io/npm/v/mcp-listen" alt="npm version"></a>&nbsp;
+        <a href="https://github.com/analyticsinmotion/mcp-listen/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="Apache 2.0 License"></a>&nbsp;
+        <a href="https://github.com/analyticsinmotion"><img src="https://github.com/user-attachments/assets/616c530f-cf2a-4f26-8f6c-7397be513847" alt="Analytics in Motion" width="137" height="20"></a>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Powered by</strong></td>
+      <td>
+        <a href="https://decibri.dev"><img src="https://img.shields.io/badge/decibri-audio_capture-brightgreen" alt="decibri"></a>&nbsp;
+        <a href="https://voxagent.run"><img src="https://img.shields.io/badge/voxagent-voice_pipeline-brightgreen" alt="voxagent"></a>
+      </td>
+    </tr>
+  </table>
+  <!-- badges: end -->
+</div>
+
 
 ## Tools
 
