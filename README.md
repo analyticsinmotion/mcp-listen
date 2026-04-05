@@ -1,13 +1,16 @@
 # mcp-listen
 
-Give your AI agents the ability to listen.
+## The first MCP server that can hear
 
-Microphone capture and speech-to-text tools for MCP-compatible agents. Powered by [decibri](https://decibri.dev).
+[![npm version](https://img.shields.io/npm/v/mcp-listen)](https://www.npmjs.com/package/mcp-listen)
+[![license](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
+
+Give your AI agents the ability to listen. Microphone capture and speech-to-text tools for MCP-compatible agents. Powered by [decibri](https://decibri.dev).
 
 ## Tools
 
 | Tool | Description |
-|------|-------------|
+| ------ | ------------- |
 | `list_audio_devices` | List available microphone input devices |
 | `capture_audio` | Record audio from the microphone and save as WAV |
 | `voice_query` | Capture, transcribe (whisper.cpp), and query a local LLM (Ollama) |
@@ -17,7 +20,7 @@ Microphone capture and speech-to-text tools for MCP-compatible agents. Powered b
 ### Claude Code
 
 ```bash
-claude mcp add mcp-listen -- npx mcp-listen
+claude mcp add mcp-listen npx mcp-listen
 ```
 
 ### Claude Desktop / ChatGPT Desktop / Cursor / Windsurf / VS Code
@@ -35,7 +38,7 @@ Add to your MCP configuration:
 }
 ```
 
-Works with any MCP-compatible client: Claude, ChatGPT, Cursor, GitHub Copilot, Windsurf, VS Code, Gemini, Zed, and more.
+Compatible with Claude Desktop, ChatGPT Desktop, Cursor, GitHub Copilot, Windsurf, VS Code, Gemini, Zed, and any MCP-compatible client.
 
 ### Global Install
 
@@ -79,7 +82,7 @@ Records audio from the microphone and saves as a WAV file.
 **Parameters:**
 
 | Parameter | Type | Default | Description |
-|-----------|------|---------|-------------|
+| ---------- | ------ | --------- | ------------- |
 | `duration_ms` | number | 5000 | Recording duration in milliseconds (100-30000) |
 | `device` | number | system default | Device index from `list_audio_devices` |
 
@@ -102,7 +105,7 @@ Full voice pipeline: capture audio, transcribe with whisper.cpp, send to Ollama,
 **Parameters:**
 
 | Parameter | Type | Default | Description |
-|-----------|------|---------|-------------|
+| ----------- | ------ | --------- | ------------- |
 | `duration_ms` | number | 5000 | Recording duration in milliseconds (100-30000) |
 | `device` | number | system default | Device index from `list_audio_devices` |
 | `whisper_model` | string | ggml-base.en.bin | Path or filename of Whisper GGML model |
@@ -132,9 +135,18 @@ The `voice_query` tool replicates the pipeline from [voxagent](https://voxagent.
 
 The `voice_query` tool requires a Whisper GGML model file. Download one:
 
+**Linux / macOS:**
+
 ```bash
 mkdir -p ~/.mcp-listen/models
 curl -L -o ~/.mcp-listen/models/ggml-base.en.bin https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.en.bin
+```
+
+**Windows (PowerShell):**
+
+```powershell
+mkdir "$env:USERPROFILE\.mcp-listen\models" -Force
+Invoke-WebRequest -Uri "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.en.bin" -OutFile "$env:USERPROFILE\.mcp-listen\models\ggml-base.en.bin"
 ```
 
 The model is ~150MB and downloads once. You can also set the `WHISPER_MODEL_PATH` environment variable to a custom directory.
