@@ -39,8 +39,8 @@
     "decibri": "^1.0.0"
   },
   "optionalDependencies": {
-    "@kutalia/whisper-node-addon": "*",
-    "ollama": "*"
+    "@kutalia/whisper-node-addon": "^1.0.1",
+    "ollama": "^0.6.0"
   },
   "engines": {
     "node": ">=18"
