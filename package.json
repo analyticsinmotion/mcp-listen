@@ -1,7 +1,8 @@
 {
   "name": "mcp-listen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Give your AI agents the ability to listen. Microphone capture and speech-to-text tools for MCP-compatible agents.",
+  "mcpName": "io.github.analyticsinmotion/mcp-listen",
   "main": "index.js",
   "bin": {
     "mcp-listen": "./index.js"
