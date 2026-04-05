@@ -1,0 +1,48 @@
+{
+  "name": "mcp-listen",
+  "version": "0.1.0",
+  "description": "Give your AI agents the ability to listen. Microphone capture and speech-to-text tools for MCP-compatible agents.",
+  "main": "index.js",
+  "bin": {
+    "mcp-listen": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "lib/",
+    "README.md",
+    "LICENSE",
+    "ATTRIBUTION.md"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "voice",
+    "microphone",
+    "speech-to-text",
+    "audio",
+    "capture",
+    "whisper",
+    "ollama",
+    "decibri",
+    "stt",
+    "transcription"
+  ],
+  "author": "Analytics in Motion",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/analyticsinmotion/mcp-listen"
+  },
+  "homepage": "https://github.com/analyticsinmotion/mcp-listen",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "decibri": "^1.0.0"
+  },
+  "optionalDependencies": {
+    "@kutalia/whisper-node-addon": "*",
+    "ollama": "*"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
