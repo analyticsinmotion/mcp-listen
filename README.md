@@ -2,9 +2,9 @@
 
 # mcp-listen
 
-**The first MCP server that can hear.**
+**Give your AI agents the ability to listen**
 
-Give your AI agents the ability to listen. Microphone capture and speech-to-text tools for MCP-compatible agents.
+Microphone capture and speech-to-text tools for MCP-compatible agents.
 
 <div>
   <!-- badges: start -->
