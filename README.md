@@ -20,7 +20,7 @@ Microphone capture and speech-to-text tools for MCP-compatible agents.
     <tr>
       <td><strong>Powered by</strong></td>
       <td>
-        <a href="https://decibri.dev"><img src="https://img.shields.io/badge/decibri-audio_capture-brightgreen" alt="decibri"></a>&nbsp;
+        <a href="https://decibri.com"><img src="https://img.shields.io/badge/decibri-audio_capture-brightgreen" alt="decibri"></a>&nbsp;
         <a href="https://voxagent.run"><img src="https://img.shields.io/badge/voxagent-voice_pipeline-brightgreen" alt="voxagent"></a>
       </td>
     </tr>
@@ -146,7 +146,7 @@ Full voice pipeline: capture audio, transcribe with whisper.cpp, send to Ollama,
 
 ## How It Works
 
-mcp-listen uses [decibri](https://decibri.dev) for cross-platform microphone capture. No ffmpeg, no SoX, no system audio tools required. Pre-built native binaries with zero setup.
+mcp-listen uses [decibri](https://decibri.com) for cross-platform microphone capture. No ffmpeg, no SoX, no system audio tools required. Pre-built native binaries with zero setup.
 
 Audio is captured as 16-bit PCM at 16kHz mono, the standard format for speech-to-text engines.
 
@@ -199,7 +199,7 @@ The whisper model file must be downloaded before first use. See [Whisper Model S
 
 ## Powered By
 
-- [decibri](https://decibri.dev): Cross-platform microphone capture for Node.js
+- [decibri](https://decibri.com): Cross-platform microphone capture for Node.js
 - [voxagent](https://voxagent.run): Voice-powered terminal agent (inspiration for the voice_query pipeline)
 
 ## License
