@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.analyticsinmotion/mcp-listen",
+  "name": "io.github.decibri/mcp-listen",
   "description": "Give your AI agents the ability to listen. Microphone capture and speech-to-text.",
   "repository": {
-    "url": "https://github.com/analyticsinmotion/mcp-listen",
+    "url": "https://github.com/decibri/mcp-listen",
     "source": "github"
   },
   "version": "0.1.2",

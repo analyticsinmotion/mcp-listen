@@ -13,8 +13,7 @@ Microphone capture and speech-to-text tools for MCP-compatible agents.
       <td><strong>Meta</strong></td>
       <td>
         <a href="https://www.npmjs.com/package/mcp-listen"><img src="https://img.shields.io/npm/v/mcp-listen" alt="npm version"></a>&nbsp;
-        <a href="https://github.com/analyticsinmotion/mcp-listen/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="Apache 2.0 License"></a>&nbsp;
-        <a href="https://github.com/analyticsinmotion"><img src="https://github.com/user-attachments/assets/616c530f-cf2a-4f26-8f6c-7397be513847" alt="Analytics in Motion" width="137" height="20"></a>
+        <a href="https://github.com/decibri/mcp-listen/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="Apache 2.0 License"></a>&nbsp;
       </td>
     </tr>
     <tr>
@@ -206,4 +205,4 @@ The whisper model file must be downloaded before first use. See [Whisper Model S
 
 Apache-2.0. See [LICENSE](LICENSE) for details.
 
-Copyright 2026 [Analytics in Motion](https://www.analyticsinmotion.com)
+Copyright 2026 [Decibri](https://decibri.com)

@@ -2,7 +2,7 @@
   "name": "mcp-listen",
   "version": "0.1.2",
   "description": "Give your AI agents the ability to listen. Microphone capture and speech-to-text tools for MCP-compatible agents.",
-  "mcpName": "io.github.analyticsinmotion/mcp-listen",
+  "mcpName": "io.github.decibri/mcp-listen",
   "main": "index.js",
   "bin": {
     "mcp-listen": "./index.js"
@@ -31,13 +31,13 @@
   "scripts": {
     "test": "node test/smoke.js"
   },
-  "author": "Analytics in Motion",
+  "author": "Decibri",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/analyticsinmotion/mcp-listen"
+    "url": "https://github.com/decibri/mcp-listen"
   },
-  "homepage": "https://github.com/analyticsinmotion/mcp-listen",
+  "homepage": "https://github.com/decibri/mcp-listen",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
     "decibri": "^1.0.0"
